@@ -51,7 +51,7 @@ const Portfolio = () => {
   return (
     <>
       {/* Hero Section */}
-      <section className="pt-40 pb-20 bg-gray-50">
+      <section className="pt-40 pb-20 bg-gradient-to-r from-primary-dark/90 to-secondary-dark/90 text-white">
         <div className="container">
           <motion.div 
             variants={fadeIn('down', 0.2)}
@@ -60,7 +60,7 @@ const Portfolio = () => {
             className="max-w-3xl mx-auto text-center"
           >
             <h1 className="text-4xl md:text-5xl font-bold mb-6">Our Portfolio</h1>
-            <p className="text-xl text-gray-600">
+            <p className="text-xl opacity-90">
               Explore our wide range of successful projects across various industries.
             </p>
           </motion.div>

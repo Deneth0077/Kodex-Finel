@@ -8,7 +8,7 @@ const Contact = () => {
   return (
     <>
       {/* Hero Section */}
-      <section className="pt-40 pb-20 bg-gray-50">
+      <section className="pt-40 pb-20 bg-gradient-to-r from-primary-dark/90 to-secondary-dark/90 text-white">
         <div className="container">
           <motion.div 
             variants={fadeIn('down', 0.2)}
@@ -17,7 +17,7 @@ const Contact = () => {
             className="max-w-3xl mx-auto text-center"
           >
             <h1 className="text-4xl md:text-5xl font-bold mb-6">Get in Touch</h1>
-            <p className="text-xl text-gray-600">
+            <p className="text-xl opacity-90">
               Have a question or want to discuss a project? We'd love to hear from you.
             </p>
           </motion.div>
