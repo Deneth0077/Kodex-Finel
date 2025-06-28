@@ -8,7 +8,7 @@ const About = () => {
   return (
     <>
       {/* Hero Section */}
-      <section className="pt-40 pb-20 bg-gradient-to-r from-primary-dark/90 to-secondary-dark/90 text-white">
+      <section className="pt-40 pb-20 text-white bg-gradient-to-r from-primary-dark/90 to-secondary-dark/90">
         <div className="container">
           <motion.div 
             variants={fadeIn('down', 0.2)}
@@ -16,7 +16,7 @@ const About = () => {
             animate="show"
             className="max-w-3xl mx-auto text-center"
           >
-            <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6">About Kodex99</h1>
+            <h1 className="mb-6 text-4xl font-bold md:text-5xl lg:text-6xl">About Kodex99</h1>
             <p className="text-xl opacity-90">
               Our journey, mission, and the people making it all happen.
             </p>
@@ -27,7 +27,7 @@ const About = () => {
       {/* Mission Section */}
       <section className="section">
         <div className="container">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+          <div className="grid items-center grid-cols-1 gap-12 lg:grid-cols-2">
             <motion.div
               variants={fadeIn('right', 0.2)}
               initial="hidden"
@@ -37,7 +37,7 @@ const About = () => {
               <img 
                 src="https://images.pexels.com/photos/3184299/pexels-photo-3184299.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260" 
                 alt="Our mission" 
-                className="rounded-2xl shadow-xl"
+                className="shadow-xl rounded-2xl"
               />
             </motion.div>
             
@@ -47,7 +47,7 @@ const About = () => {
                 initial="hidden"
                 whileInView="show"
                 viewport={{ once: true, amount: 0.3 }}
-                className="text-3xl font-bold mb-6"
+                className="mb-6 text-3xl font-bold"
               >
                 Our Mission
               </motion.h2>
@@ -57,7 +57,7 @@ const About = () => {
                 initial="hidden"
                 whileInView="show"
                 viewport={{ once: true, amount: 0.3 }}
-                className="text-gray-600 mb-6"
+                className="mb-6 text-gray-600"
               >
                 To simplify complexity through innovative software. We create technology that 
                 empowers businesses to achieve their goals, drive growth, and adapt to changing markets.
@@ -68,7 +68,7 @@ const About = () => {
                 initial="hidden"
                 whileInView="show"
                 viewport={{ once: true, amount: 0.3 }}
-                className="text-gray-600 mb-6"
+                className="mb-6 text-gray-600"
               >
                 We believe that the right technology solutions should be accessible to all businesses, 
                 regardless of size or sector. Our approach combines technical excellence with creative 
@@ -81,11 +81,11 @@ const About = () => {
                 whileInView="show"
                 viewport={{ once: true, amount: 0.3 }}
               >
-                <h3 className="text-xl font-bold mb-4">What sets us apart:</h3>
+                <h3 className="mb-4 text-xl font-bold">What sets us apart:</h3>
                 <ul className="space-y-3">
                   {['Human-centered design approach', 'Technical excellence', 'Agile development methodology', 'Long-term partnerships'].map((item, index) => (
                     <li key={index} className="flex items-start">
-                      <Check className="text-primary-dark mt-1 mr-2 flex-shrink-0" size={18} />
+                      <Check className="flex-shrink-0 mt-1 mr-2 text-primary-dark" size={18} />
                       <span>{item}</span>
                     </li>
                   ))}
@@ -104,7 +104,7 @@ const About = () => {
             subtitle="The principles that guide everything we do."
           />
           
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+          <div className="grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-4">
             <ValueCard
               title="Flexibility"
               description="We adapt quickly to changing technologies and business needs to deliver the best solutions."
@@ -134,14 +134,14 @@ const About = () => {
       </section>
 
       {/* Team Section */}
-      <section className="section">
+      {/* <section className="section">
         <div className="container">
           <SectionHeading
             title="Our Team"
             subtitle="Meet the talented people behind Kodex99."
           />
           
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+          <div className="grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-3">
             {[
               { name: 'Alex Johnson', role: 'CEO & Founder', image: 'https://images.pexels.com/photos/2379004/pexels-photo-2379004.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260' },
               { name: 'Maria Rivera', role: 'CTO', image: 'https://images.pexels.com/photos/774909/pexels-photo-774909.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260' },
@@ -156,13 +156,13 @@ const About = () => {
                 whileInView={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.5, delay: index * 0.1 }}
                 viewport={{ once: true }}
-                className="card overflow-hidden"
+                className="overflow-hidden card"
               >
                 <div className="h-64 overflow-hidden">
                   <img 
                     src={member.image} 
                     alt={member.name}
-                    className="w-full h-full object-cover" 
+                    className="object-cover w-full h-full" 
                   />
                 </div>
                 <div className="p-6">
@@ -173,19 +173,19 @@ const About = () => {
             ))}
           </div>
         </div>
-      </section>
+      </section> */}
 
       {/* Culture Section */}
       <section className="section bg-gray-50">
         <div className="container">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+          <div className="grid items-center grid-cols-1 gap-12 lg:grid-cols-2">
             <div>
               <motion.h2 
                 variants={fadeIn('right', 0.2)}
                 initial="hidden"
                 whileInView="show"
                 viewport={{ once: true, amount: 0.3 }}
-                className="text-3xl font-bold mb-6"
+                className="mb-6 text-3xl font-bold"
               >
                 Our Workplace Culture
               </motion.h2>
@@ -195,7 +195,7 @@ const About = () => {
                 initial="hidden"
                 whileInView="show"
                 viewport={{ once: true, amount: 0.3 }}
-                className="text-gray-600 mb-6"
+                className="mb-6 text-gray-600"
               >
                 At Kodex99, we've created a workplace where innovation thrives, collaboration is celebrated, 
                 and personal growth is encouraged. We believe that the best solutions come from diverse 
@@ -207,7 +207,7 @@ const About = () => {
                 initial="hidden"
                 whileInView="show"
                 viewport={{ once: true, amount: 0.3 }}
-                className="text-gray-600 mb-6"
+                className="mb-6 text-gray-600"
               >
                 Our team members are encouraged to experiment, learn continuously, and bring their unique 
                 talents to the table. We prioritize work-life balance, knowing that creativity and 
@@ -219,7 +219,7 @@ const About = () => {
                 initial="hidden"
                 whileInView="show"
                 viewport={{ once: true, amount: 0.3 }}
-                className="flex items-center text-primary-dark font-medium"
+                className="flex items-center font-medium text-primary-dark"
               >
                 <Briefcase size={20} className="mr-2" />
                 <span>Join our team and be part of something exceptional.</span>
@@ -235,7 +235,7 @@ const About = () => {
               <img 
                 src="https://images.pexels.com/photos/3184291/pexels-photo-3184291.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260" 
                 alt="Workplace culture" 
-                className="rounded-2xl shadow-xl"
+                className="shadow-xl rounded-2xl"
               />
             </motion.div>
           </div>
